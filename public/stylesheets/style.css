@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* IMPORT SECTION */
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
@@ -6,27 +8,78 @@ body {
   line-height: 1.4;
 }
 
+/* ------------ NAVBAR - SECTION ----------- */
+
 /* changing navbar logo height */
 .navbar-left img {
     height: 60px;
 }
 
-/*changes the navbar font */
+/*changes the navbar font properties */
 .navbar-default li {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-size: 1.5rem;
+    color: black;
 }
 
+/* adds some padding beside the logo */
 .navbar-header {
     padding-right: 2rem;
 }
 
-i[class~="fa"] {
-} 
 
 .navbar-nav li a {
  line-height: 30px;
 }
+
+/* ----------------------------------------- */
+
+main {
+    width: 70%;
+    min-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+aside {
+    flex-basis: 30%;
+    min-width: 300px;
+}
+
+/* Below certain threshold, change main flex order */
+@media screen and (max-width: 599px){
+    main {
+        flex-direction: column;
+        min-width: 300px;
+    }
+}
+
+/* Devlopment Tools */
+
+body {
+    outline: 3px solid blue;
+}
+
+main {
+    outline: 3px solid green;
+}
+
+section {
+    outline: 3px solid hotpink;
+}
+
+aside {
+    outline: 3px solid gold;
+}
+
+/* ----------------------------------------- */
