@@ -57,6 +57,11 @@ aside {
     min-width: 300px;
 }
 
+header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 /* Below certain threshold, change main flex order */
 @media screen and (max-width: 599px){
     main {
